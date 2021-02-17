@@ -1,6 +1,12 @@
 const express = require('express')
 const router = express.Router()
-const { createClient } = require('./actions')
+
+const multer = require('multer')
+const { createClient, deleteClient, getClient, getClients, updateClient } = require('./actions')
+const coverUploader = multer({ dest: 'covers/' })
+const setCover = require('../../middlewares/setCover')
+
+router.get('/', getClients)
 
 // GET by ID
 router.get('/:id', (req, res) => {
