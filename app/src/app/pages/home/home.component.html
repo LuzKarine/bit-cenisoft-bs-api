@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-12">
+            <form>
+                <div class="d-flex">
+                    <button class="boton mr-2">BUSCAR</button>
+                    <input type="text" class="form-control" placeholder="¿Qué deseas leer hoy?" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div *ngFor="let book of books" class="col-12 col-md-3">
+            <div class="card libro shadow-sm">
+                <div class="card-body">
+                    <h4 class="libro-nombre text-dark">{{book.name}}</h4>
+
+                    <figure class="libro-caratula">
+                        <img [src]="book.cover" alt="">
+                    </figure>
+
+
+                    <h5 class="libro-precio text-primary font-weight-bold">{{book.unitValue | currency}}</h5>
+                    <div class="libro-boton">
+                        <a class="btn btn-secondary" [routerLink]="['/books', book._id]" (click)="mostrar=false" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                <path
+                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                            </svg>Ver</a>
+                    </div>
+
+                    <p class="libro-description">{{book.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

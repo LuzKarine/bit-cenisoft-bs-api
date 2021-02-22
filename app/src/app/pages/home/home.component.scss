@@ -1,0 +1,28 @@
+
+.libro .libro-caratula img{
+    object-fit: cover;
+    height: 110px;
+    max-width: 100px;
+}
+
+.libro .libro-precio{
+    grid-area: precio;
+    text-align: right;
+}
+
+.libro .libro-boton {
+    grid-area: boton;
+}
+
+.libro .libro-descripcion{
+    grid-area: descripcion;
+    text-align: justify;
+}
+
+.boton{      
+    outline: none;
+    color: rgb(2, 94, 115);
+    border: none;
+    background-color: #ffffff;
+    font-weight: bold;
+}

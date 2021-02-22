@@ -1,0 +1,53 @@
+.captionPaginaLibro{
+    padding-left: 10px ;
+    padding-right: 10px;
+    vertical-align: top;
+    /*margin-left: -20%;*/
+  }
+   
+  .spanVlrPaginaLibro{
+    color: rgb(2, 94, 115);
+    font-weight: bold;
+    font-size: 15px;
+    /*margin-left: -20%;*/
+    margin-top: 20%;
+    
+  }
+
+  .spanVlrTotalPaginaLibro{
+    color: rgb(2, 94, 115);
+    font-weight: bold;
+    font-size: 25px;
+    /*margin-left: -20%;*/
+    margin-top: 20%;
+    
+  }
+
+  .imgPaginaLibro{
+    width: 100%;
+    height: 80%;  
+   
+  }
+
+  .divTotal{
+    border-top: solid thin rgb(224, 238, 241);
+  }
+  .inputPaginaLibro{
+    width: 40% !important;
+  }
+
+  .btnPaginaLibro {
+    border-radius: 2px;
+    width: 80%;    
+    margin-top: 3%;
+    margin-left: 25%;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.1;
+
+  }
